@@ -1,0 +1,28 @@
+{
+  "name": "hjake",
+  "type":"module",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin":{
+    "hjake":"index.js" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vladimirslav31/hjake.git"
+  },
+  "keywords": ["cli", "automation"],
+  "author": "vladimirslav31",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vladimirslav31/hjake/issues"
+  },
+  "homepage": "https://github.com/vladimirslav31/hjake#readme",
+  "dependencies": {
+    "commander": "^8.1.0",
+    "node-fetch": "^2.6.1"
+  }
+}
