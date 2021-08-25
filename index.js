@@ -2,9 +2,7 @@
 
 import cli from "commander";
 import download from "./commands/download.js"
-import posts from "./commands/posts.js"
-import users from "./commands/users.js"
-import comments from "./commands/comments.js"
+import create from "./commands/create.js"
 
 cli.description("Automate The Boring Stuffs");
 cli.name("hjake");
@@ -20,25 +18,10 @@ cli
   .action(download)
 
 cli
-  .command("posts")
-  .arguments("[postID]", "ID of post you would like to downloads")
-  .option("-p, --pretty", "Pretty print output from API.")
-  .description("Download a list of all posts or one post by ID")
-  .action(posts)
-
-cli
-  .command("comments")
-  .arguments("[postID]", "ID of post you would like to downloads")
-  .option("-p, --pretty", "Pretty print output from API.")
-  .description("Download a list of all posts or one post by ID")
-  .action(comments)
-
-cli
-  .command("users")
-  .arguments("[postID]", "ID of post you would like to downloads")
-  .option("-p, --pretty", "Pretty print output from API.")
-  .description("Download a list of all posts or one post by ID")
-  .action(users)
+  .command("create")
+  .arguments("[model]", "Name for Model of Web Application")
+  .description("Creating a new NextJS-MongoDB-Mapbox Project")
+  .action(create)
 
 cli.parse(process.argv);
 

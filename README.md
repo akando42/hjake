@@ -1,7 +1,7 @@
 hjake
 ==
 
-Automate The Boring Stuffs
+Automate The Boring Stuffs For Freelancers
 
 [![Version](https://img.shields.io/npm/v/do.svg)](https://www.npmjs.com/package/hjake)
 [![Downloads/week](https://img.shields.io/npm/dw/do.svg)](https://www.npmjs.com/package/hjake)
