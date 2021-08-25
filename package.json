@@ -1,11 +1,11 @@
 {
   "name": "hjake",
-  "type":"module",
-  "version": "0.0.1",
+  "type": "module",
+  "version": "0.0.2",
   "description": "Automate The Boring Stuffs",
   "main": "index.js",
-  "bin":{
-    "hjake":"index.js" 
+  "bin": {
+    "hjake": "index.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,7 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/akando42/hjake.git"
   },
-  "keywords": ["cli", "automation"],
+  "keywords": [
+    "cli",
+    "automation"
+  ],
   "author": "vladimirslav31",
   "license": "MIT",
   "bugs": {
