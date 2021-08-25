@@ -24,20 +24,20 @@ hjake/0.0.1 darwin-x64 node-v15.6.0
 <!-- usagestop -->
 # Commands
 <!-- commands -->
-* [`hjake download`](#hjake-hello)
+* [`hjake news`](#hjake-news)
 
-## `hjake download`
+## `hjake news`
 
 Describe the command here
 
 ```
 USAGE
-  $ hjake download
+  $ hjake news
 
 OPTIONS
   -p, --pretty  Format JSON response
 
 DESCRIPTION
-  Download JSON data of treasure locations
+  Open Top 10 Articles from Hacker News.
 ```
 

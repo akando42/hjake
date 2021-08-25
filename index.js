@@ -1,8 +1,10 @@
 #!/usr/bin/env node
 
 import cli from "commander";
-import download from "./commands/download.js"
+import news from "./commands/news.js"
 import create from "./commands/create.js"
+// import weather from "./commands/weather.js"
+// import contracts from "./commands/contracts.js"
 
 cli.description("Automate The Boring Stuffs");
 cli.name("hjake");
@@ -11,11 +13,11 @@ cli.addHelpCommand(false);
 cli.helpOption(false);
 
 cli
-  .command("download")
-  .arguments("[postID]", "ID of post you would like to downloads")
+  .command("news")
+  .arguments("[newsID]", "ID of the Hackernews Article")
   .option("-p, --pretty", "Pretty print output from API.")
-  .description("Download a list of all posts or one post by ID")
-  .action(download)
+  .description("Open Top 10 Articles from Hacker News.")
+  .action(news)
 
 cli
   .command("create")
