@@ -2,7 +2,7 @@
   "name": "hjake",
   "type":"module",
   "version": "0.0.1",
-  "description": "",
+  "description": "Automate The Boring Stuffs",
   "main": "index.js",
   "bin":{
     "hjake":"index.js" 
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vladimirslav31/hjake.git"
+    "url": "git+https://github.com/akando42/hjake.git"
   },
   "keywords": ["cli", "automation"],
   "author": "vladimirslav31",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vladimirslav31/hjake/issues"
+    "url": "https://github.com/akando42/hjake/issues"
   },
-  "homepage": "https://github.com/vladimirslav31/hjake#readme",
+  "homepage": "https://github.com/akando42/hjake#readme",
   "dependencies": {
     "commander": "^8.1.0",
     "node-fetch": "^2.6.1"
