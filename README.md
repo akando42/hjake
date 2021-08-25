@@ -3,8 +3,8 @@ hjake
 
 Automate The Boring Stuffs
 
-[![Version](https://img.shields.io/npm/v/do.svg)](https://npmjs.org/package/hjake)
-[![Downloads/week](https://img.shields.io/npm/dw/do.svg)](https://npmjs.org/package/hjake)
+[![Version](https://img.shields.io/npm/v/do.svg)](https://www.npmjs.com/package/hjake)
+[![Downloads/week](https://img.shields.io/npm/dw/do.svg)](https://www.npmjs.com/package/hjake)
 [![License](https://img.shields.io/npm/l/do.svg)](https://github.com/https://github.com/akando42/https://github.com/akando42/hjake/blob/master/package.json)
 
 <!-- toc -->
