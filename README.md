@@ -49,10 +49,7 @@ Describe the command here
 
 ```
 USAGE
-  $ hjake create
-
-OPTIONS
-  -p, --pretty  Format JSON response
+  $ hjake create [model_name]
 
 DESCRIPTION
   Create New NextJS project with API generated.
