@@ -24,7 +24,7 @@ export default async (model) => {
     const modelName = await input({ message: chalk.green('Data model name') });  
   }
 
-  // console.log(__template);
+  // Copying NextJS Files and Generate new API endpoint
   let api_dir = model+'/pages/api/';
   shell.cp('-R', __template, model);
   shell.cp(api_dir+"api_template.js",api_dir+model+".js");
