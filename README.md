@@ -41,3 +41,20 @@ DESCRIPTION
   Open Top 10 Articles from Hacker News.
 ```
 
+* [`hjake create`](#hjake-create)
+
+## `hjake create`
+
+Describe the command here
+
+```
+USAGE
+  $ hjake create
+
+OPTIONS
+  -p, --pretty  Format JSON response
+
+DESCRIPTION
+  Create New NextJS project with API generated.
+```
+
