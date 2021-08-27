@@ -49,7 +49,7 @@ Describe the command here
 
 ```
 USAGE
-  $ hjake create [model_name]
+  $ hjake create [model_name]np
 
 DESCRIPTION
   Create New NextJS project with API generated.

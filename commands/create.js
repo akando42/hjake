@@ -29,7 +29,6 @@ export default async (model) => {
   shell.cp('-R', __template, model);
   shell.cp(api_dir+"api_template.js",api_dir+model+".js");
 
-  let api_endpoint = new String(model);
   shell.sed('-i', 'location', model, api_dir+model+".js");  
 
   if (mongoDB && mapBoxKey) {
