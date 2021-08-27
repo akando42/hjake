@@ -21,38 +21,25 @@ export default (newsID, options) => {
       })
       .catch(error => console.error(error));
 
-    const news = topURLs.map(async url => {
-      await fetch(url)
+    const newsURLCollection = topURLs.map(async url => {
+      const siteURL = await fetch(url)
         .then(response => response.json())
-        .then(newsJSON => newsJSON.url)
-        .then(newsURL => {
-          if(newsURL){
-            news.push(newsURL);
-            open(newsURL);
-            return newsURL;
+        .then(newsJSON => {
+          if (newsJSON.url){
+            open(newsJSON.url);
+            return newsJSON.url;
           } else {
-            console.log("Missing URL");
             return "Missing URL";
           }
         })
         .catch(error => console.error(error))
+      return siteURL;
     })
 
-    // for (url of topURLs){
-    //   await fetch(url)
-    //     .then(response => response.json())
-    //     .then(newsJSON => {
-    //       news.push(newsJSON.url);
-    //       return newsJSON.url;
-    //     })
-    //     .then(newsURL => open(newsURL))
-    //     .catch(error => console.error(error))
-    // } 
-
-    return news;
+    return Promise.all(newsURLCollection);
   };
 
-  getNews().then(response => {
+  return getNews().then(response => {
     console.log("RESPONSE", response);
     console.timeEnd("getNews");
     return response;
